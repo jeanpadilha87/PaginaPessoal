@@ -1,29 +1,184 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
-  <title>Minha Página Pessoal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Jean Padilha, Analista de Implantação e Suporte em transição para a área de tecnologia.">
+  <title>Jean Padilha | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="imagens/jean.jpg" alt="Minha foto" width="200">
-    <h1>Jean Padilha</h1>
-    <h1>Analista de Implantação/Suporte</h1>
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="pagina1.html">Sobre mim</a> |
-      <a href="pagina2.html">Experiência Profissional</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Página inicial de Jean Padilha">Jean Padilha</a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#sobre">Quem sou</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
   <main>
-    <h2>Apresentação</h2>
-    <p>Olá! Meu nome é Jean Padilha. Esta pagina foi criada para contar um pouco mais sobre mim.</p>
+    <section class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Portfólio acadêmico e profissional</p>
+        <h1>Jean Padilha</h1>
+        <p class="hero-subtitle">Analista de Implantação e Suporte com experiência em sistemas de varejo, atendimento ao cliente, treinamentos, documentação e transição para desenvolvimento de software.</p>
+        <div class="hero-actions" aria-label="Ações principais">
+          <a class="button primary" href="projetos.html">Ver projetos</a>
+          <a class="button secondary" href="arquivos/CurriculoJean.pdf" download>Baixar currículo</a>
+        </div>
+      </div>
+      <figure class="profile-card">
+        <img src="imagens/jean.jpg" alt="Foto de Jean Padilha">
+        <figcaption>Analista de Implantação/Suporte</figcaption>
+      </figure>
+    </section>
+
+    <section class="section two-columns" id="sobre">
+      <div>
+        <p class="eyebrow">Quem sou</p>
+        <h2>Profissional de tecnologia com foco em pessoas, processos e sistemas</h2>
+      </div>
+      <div class="text-block">
+        <p>Sou Jean Padilha, profissional com mais de 18 anos de experiência em atendimento e suporte a usuários de sistemas, especialmente nos segmentos de varejo, crédito, financeiro e fiscal.</p>
+        <p>Atuei em implantação de novos clientes, treinamentos, instalações, adequações de sistemas, elaboração de manuais e participação em auditorias ISO 9001/20000. Atualmente curso Análise e Desenvolvimento de Sistemas e venho ampliando minha atuação para desenvolvimento, produto e melhoria contínua de soluções digitais.</p>
+      </div>
+    </section>
+
+    <section class="section" id="tecnologias">
+      <div class="section-heading">
+        <p class="eyebrow">Tecnologias dominadas</p>
+        <h2>Conhecimentos técnicos</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-group">
+          <h3>Desenvolvimento Web</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <h3>Banco de Dados e Sistemas</h3>
+          <ul>
+            <li>SQL</li>
+            <li>MySQL</li>
+            <li>APIs REST</li>
+            <li>Lógica de programação</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <h3>Ferramentas e Processos</h3>
+          <ul>
+            <li>Git e GitHub</li>
+            <li>Visual Studio Code</li>
+            <li>MySQL Workbench</li>
+            <li>Postman</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section highlight-section" id="projetos">
+      <div class="section-heading">
+        <p class="eyebrow">Projetos em destaque</p>
+        <h2>Trabalhos selecionados</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="tag">HTML/CSS</span>
+          <h3>Portfólio Pessoal</h3>
+          <p>Site pessoal desenvolvido para apresentar formação, experiência, tecnologias e projetos acadêmicos.</p>
+          <a href="projeto-portfolio.html">Abrir página do projeto</a>
+        </article>
+        <article class="project-card">
+          <span class="tag">JavaScript e API</span>
+          <h3>Consulta de Empresas por CNPJ</h3>
+          <p>Aplicação web acadêmica para consultar dados de empresas brasileiras por CNPJ, usando uma API pública e uma interface objetiva para visualização das informações.</p>
+          <a href="projeto-controle-academico.html">Abrir página do projeto</a>
+        </article>
+        <article class="project-card">
+          <span class="tag">Full Stack</span>
+          <h3>Sistema de Gestão Pessoal</h3>
+          <p>Aplicação web para controle de despesas pessoais, com autenticação, categorias, dashboard, filtros e gráficos interativos.</p>
+          <a href="projeto-implantacao.html">Abrir página do projeto</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia">
+      <div class="section-heading">
+        <p class="eyebrow">Experiência</p>
+        <h2>Trajetória profissional</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div>
+            <h3>Method Sistemas</h3>
+            <p class="meta">2017 até o momento (9 anos) </p>
+          </div>
+          <p>Suporte interno e externo a usuários, implantação de novos clientes, treinamentos, instalação e adequação de sistemas. Atuação em transição para Product Owner, contribuindo com levantamento de requisitos de clientes e melhoria de processos.</p>
+        </article>
+        <article class="timeline-item">
+          <div>
+            <h3>Ibratan</h3>
+            <p class="meta">2007 a 2017 (9 anos)</p>
+          </div>
+          <p>Atendimento e suporte aos usuários via Service Desk, plantões 24/7, elaboração de manuais e informativos, treinamentos de implantação, liderança de equipe e participação em auditorias ISO 9001/20000.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section two-columns" id="formacao">
+      <div>
+        <p class="eyebrow">Formação</p>
+        <h2>Base acadêmica</h2>
+      </div>
+      <div class="list-panel">
+        <ul>
+          <li>Tecnólogo em Análise e Desenvolvimento de Sistemas - SENAC - Cursando</li>
+          <li>MBA em Gestão de Pessoas - Anhanguera - Concluído em 2010</li>
+          <li>Bacharelado em Administração de Empresas - Anhanguera - Concluído em 2008</li>
+          <li>Técnico em Contabilidade - SEDUP - Concluído em 2004</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section two-columns" id="certificacoes">
+      <div>
+        <p class="eyebrow">Certificações</p>
+        <h2>Cursos e certificados</h2>
+      </div>
+      <div class="list-panel">
+        <ul>
+          <li>Curso Técnico em Montagem e Manutenção de Computadores - SENAC - 2007</li>
+          <li>Curso Técnico em Recursos Humanos - Educaville - 2005</li>
+          <li>Curso Técnico em Informática - Escola Técnica Tupy - 2003</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div>
+        <p class="eyebrow">Contato</p>
+        <h2>Vamos conversar?</h2>
+        <p>Estou disponível para oportunidades, projetos acadêmicos e conexões profissionais na área de tecnologia.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:je.padilha@gmail.com">je.padilha@gmail.com</a>
+        <a href="https://github.com/jeanpadilha87" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/jean-padilha-5839b141?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="arquivos/CurriculoJean.pdf" download>Currículo para download</a>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>Desenvolvido por Jean Padilha - 2025</p>
+  <footer class="site-footer">
+    <p>Desenvolvido por Jean Padilha - 2026</p>
   </footer>
 </body>
 </html>
